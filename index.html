@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- Add your HTML content here -->
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="container">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-content">
+        <div class="hero-text">
+          <p class="eyebrow">Hello, I’m</p>
+          <h1>Bobby Weber</h1>
+          <p class="intro">
+            A Computer Science student at James Madison University with a passion for creating projects that are both
+            functional and visually appealing.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="img/me_blur.png" alt="Portrait of me">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="section cards">
+      <h2>About Me</h2>
+      <p>
+        I'm a senior at James Madison University in Harrisonburg, Virginia studying Computer Science. I enjoy
+        learning new technologies and applying them to real-world projects. I am excited to continue growing my skills
+        and building a portfolio of work that demonstrates my abilities as a web developer. Aside from web development,
+        I also enjoy game development and design, as well as graphic art.
+      </p>
+    </section>
+
+    <section id="skills" class="section cards">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span><i class="fab fa-html5"></i>HTML</span>
+        <span><i class="fab fa-css3-alt"></i>CSS</span>
+        <span><i class="fab fa-js"></i>JavaScript</span>
+        <span><i class="fab fa-java"></i>Java</span>
+        <span><i class="fab fa-python"></i>Python</span>
+      </div>
+    </section>
+  </main>
+
+  <section id="projects" class="section section-projects">
+    <div class="container">
+      <div class="project-header">
+        <h2>Projects</h2>
+        <p>A few of the projects I have worked on as I have grown my development skills.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>uNAVersity</h3>
+          <p>A JMU-oriented campus navigation web app that helps students plan their routes around campus using their
+            preferred mode of transport, all while using a clean and intuitive UI.</p>
+          <div class="skills-list">
+            <span><i class="fab fa-html5"></i>HTML</span>
+            <span><i class="fab fa-css3-alt"></i>CSS</span>
+            <span><i class="fab fa-js"></i>JavaScript</span>
+            <span><i class="fa-solid fa-location-dot"></i>Google Maps API</span>
+          </div>
+        </article>
+        <article class="project-card">
+          <h3>CleanShot (in-progress)</h3>
+          <p>Google Chrome extension that makes it easy to capture screenshots from streaming services and add them directly to your wallpaper collection, also giving the user simple customization options for more appealing images.</p>
+          <div class="skills-list">
+            <span><i class="fa-brands fa-openai"></i>Codex</span>
+            <span><i class="fab fa-css3-alt"></i>CSS</span>
+          </div>
+        </article>
+        <article class="project-card">
+          <h3>Super Dukio</h3>
+          <p>JMU-themed Mario-like game featuring numerous levels, enemies, and power-ups, with fun music and artwork. Created by a team for a class project.</p>
+          <div class="skills-list">
+            <span><i class="fab fa-html5"></i>HTML</span>
+            <span><i class="fab fa-css3-alt"></i>CSS</span>
+            <span><i class="fab fa-js"></i>JavaScript</span>
+            <span><i class="fa-brands fa-openai"></i>ChatGPT</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Bobby Weber</p>
+      <p>weber4bm@dukes.jmu.edu</p>
+      <p><a href="https://github.com/Bobby-Weber" target="_blank">GitHub Profile</a></p>
+    </div>
+  </footer>
 </body>
+
 </html>
