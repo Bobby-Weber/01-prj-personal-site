@@ -324,3 +324,52 @@ h1 {
 
 
 }
+
+
+/* Project title links */
+.project-card h3 a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: color 0.25s ease;
+}
+
+/* External link icon */
+.project-card h3 a::after {
+  content: "\f35d"; /* Font Awesome arrow-up-right-from-square */
+  font: var(--fa-font-solid);
+  font-size: 0.75em;
+  opacity: 0;
+  transform: translateY(2px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Animated underline */
+.project-card h3 a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.project-card h3 a:hover {
+  color: #4f8cff; /* choose an accent color that matches your site */
+}
+
+.project-card h3 a:hover::before {
+  transform: scaleX(1);
+}
+
+.project-card h3 a:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
